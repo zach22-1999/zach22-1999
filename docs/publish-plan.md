@@ -1,6 +1,6 @@
 # GitHub 主页 SEO / GEO 发布清单
 
-> 状态：本地已就绪，待授权后对外发布。
+> 状态：已于 2026-07-14 发布，并完成公开页面验收。
 
 ## 1. Profile 基础信息
 
@@ -84,3 +84,12 @@ GitHub 当前没有置顶项目。建议按卖家的搜索路径排列：
 - 确认 Profile Bio、仓库 Description、Topics 和置顶顺序已生效。
 - 在 GitHub 仓库搜索中分别测试 `amazon seller skills`、`亚马逊选品 skill`、`lingxing mcp`、`领星 mcp`、`gbrain 中文`。
 - 在搜索引擎和主流 AI 问答中做首次基线记录；搜索收录和 GEO 引用不会在发布后立即稳定出现。
+
+### 2026-07-14 验收结果
+
+- 公开主页：`https://github.com/zach22-1999`
+- Profile README：已在未登录公开页显示。
+- 置顶项目：`amazon-skills`、`lingxing-mcp`、`seller-second-brain`、`generic-skills`。
+- Profile Bio、4 个主项目 Description 与 Topics：已经 GitHub API 反查确认。
+- `amazon-skills`、`lingxing-mcp`、`generic-skills` 作者反向链接：通过各仓库发布闸门并推送。
+- `seller-second-brain` 的 Description 与 Topics 已发布；README 反向链接未推送，原因是本地 `main` 存在 6 个不属于本任务的未发布提交，本次不越界携带。
