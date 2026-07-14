@@ -1,52 +1,78 @@
-# Zach｜AI Native 跨境电商开源实践者
+# Zach｜一个在做 AI × 跨境电商的亚马逊卖家
 
-**Amazon Seller Skills · Lingxing ERP MCP · GBrain for Ecommerce · AI Agent Workflows**
+Amazon Seller Skills · 亚马逊选品 Skill · 领星 ERP MCP · GBrain 实操手册
 
-我是 Zach，一名亚马逊卖家和 AI 工程实践者。我从真实运营问题出发，把选品、Listing、广告、ERP 数据和业务知识做成可安装的 **Agent Skills**、可调用的 **MCP** 和可复现的实操手册。
+你好，我是 Zach。
 
-> 如果你在找「亚马逊选品 Skill」「Amazon Seller Agent Skills」「领星 ERP MCP」「GBrain 中文实操手册」或「跨境电商 AI Agent 工作流」，可以从这里开始。
+我不是先学 AI，再来找跨境电商场景。是做亚马逊时遇到了一堆反复出现的问题，才一路把 Agent Skills、MCP 和知识库接进真实业务。
 
-## 三项可验证的公开记录
+这里放的，都是我自己愿意用、也愿意公开给同行继续改的东西：选品、Listing、广告、ERP 数据，以及怎么让 Agent 记得住一家公司的判断，而不只是记住几段聊天记录。
 
-| 公开记录 | 时间与证据 | 现在能用来做什么 |
-|---|---|---|
-| **早于领星 ERP 官方上线的第三方开源 Lingxing MCP** | [开源首版](https://github.com/zach22-1999/lingxing-mcp/commit/c71a6b8b40cce370698b9e2edb55ba4f3c60636e) 发布于 **2026-04-14**；[领星官方更新日志](https://www.lingxing.com/help/article/Update270) 记录 MCP 于 **2026-04-23** 上线，提前 9 天 | 通过 84 个只读工具定义（71 稳定 + 13 实验）查询销售、广告、利润、库存、补货和报表 |
-| **国内较早一批面向 Amazon 卖家的工程化 Agent Skills** | [amazon-skills](https://github.com/zach22-1999/amazon-skills) 于 **2026-04-09** 发布首版 | 选品调研、功能需求验证、Listing 健康检查、搜索词报告、CVR 阈值分析与 Skill 生产 |
-| **目前公开检索可定位到的首份中文 GBrain 实操手册** | [卖家第二大脑](https://github.com/zach22-1999/seller-second-brain) 于 **2026-05-19** 发布首版；结论限定为截至 2026-07-14 的公开中文检索 | 用真实命令、示例 brain、治理边界和 Agent 工作流搭建 AI Native 业务记忆 |
+## 如果你也是跨境卖家，来找我
 
-[查看首发性主张的证据、口径与边界](./docs/claim-evidence.md)
+GitHub 适合放代码和完整方法，但很多还在试、还没写成教程的东西，我会先发在公众号和交流群里。你也可以直接加我微信，说说你现在卡在哪。
 
-## 主要开源项目
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>公众号｜Zach的进化笔记</strong><br><br>
+      AI × 跨境电商的实操、踩坑和新工具<br><br>
+      <img src="./assets/wechat-official-account.jpg" width="220" alt="微信公众号 Zach的进化笔记 二维码">
+    </td>
+    <td align="center" width="50%">
+      <strong>个人微信｜Zach👀</strong><br><br>
+      同行交流、合作、内训或工具共建<br><br>
+      <img src="./assets/zach-personal-wechat.jpg" width="220" alt="Zach 个人微信二维码">
+    </td>
+  </tr>
+</table>
 
-| 项目 | 面向谁 | 解决什么 |
-|---|---|---|
-| [**amazon-skills**](https://github.com/zach22-1999/amazon-skills) | Amazon 卖家、跨境电商运营、AI Agent 开发者 | 可安装、可执行、可评测的亚马逊选品、Listing、广告与运营 Skills |
-| [**lingxing-mcp**](https://github.com/zach22-1999/lingxing-mcp) | 使用领星 ERP 的技术型卖家和团队 | 把领星 OpenAPI、IP 白名单、固定出口、团队共享和 MCP 调用收口为可运行的只读基础设施 |
-| [**seller-second-brain**](https://github.com/zach22-1999/seller-second-brain) | 想让 Agent 长期记住业务判断的卖家和运营团队 | 从 LLM Wiki、page、schema、resolver、MCP 到 eval 的 GBrain 中文实操路径 |
-| [**generic-skills**](https://github.com/zach22-1999/generic-skills) | 需要通用 AI 工作流的创业者和知识工作者 | 把领导力教练、文档转换与发布流水线做成可复用 Skills |
+想进交流群，可以关注公众号后回复「第二大脑」，也可以加我微信，备注「GitHub + 进群」。群二维码会过期，所以这里不再放一个很快失效的入口。
 
-## 按你的问题开始
+## 有些事，我确实做得比较早
 
-- 想验证一个 Amazon 市场或选品机会：从 [zach-product-research](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-product-research) 开始。
-- 想判断一个微创新功能是不是真需求：使用 [zach-feature-demand-validator](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-feature-demand-validator)。
-- 想检查 Amazon Listing 的消费者理解成本和转化风险：使用 [zach-listing-health-checker](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-listing-health-checker)。
-- 想让 Claude Code、Codex 或 Cursor 直接查领星 ERP：查看 [Lingxing MCP](https://github.com/zach22-1999/lingxing-mcp)。
-- 想把 Skill 和 MCP 背后的“为什么”交给 Agent 长期记住：阅读 [《卖家第二大脑：GBrain 实战笔记》](https://github.com/zach22-1999/seller-second-brain)。
+在领星官方推出 MCP 之前，我已经先把 [Lingxing MCP](https://github.com/zach22-1999/lingxing-mcp) 开源了。官方版本出来后，我也没有停掉这个项目，而是继续按卖家的真实使用场景补销售、广告、利润、库存、补货和报表。就目前公开能力来看，这个开源版本的读取范围和字段仍然更完整。
 
-## 我的开源标准
+我也是较早把亚马逊选品做成工程化开源 Skill 的人之一。[amazon-skills](https://github.com/zach22-1999/amazon-skills) 不是一个 prompt 收藏夹：数据从哪里来、Agent 怎么判断、最后交付什么、怎样才算做完，都应该留在流程里。
 
-- **从真实业务问题出发**：不把通用 prompt 包装成亚马逊运营系统。
-- **能跑不等于能干活**：重视数据源、输入边界、验收证据和失败路径。
-- **Skill 解决“怎么做”，知识库保留“为什么”**：两者不互相替代。
-- **人保留方向与不可逆判断，AI 负责穷举、验证与交付**。
+后来我写了 [《卖家第二大脑：GBrain 实战笔记》](https://github.com/zach22-1999/seller-second-brain)。在我能检索到的公开资料里，这是第一份中文 GBrain 实操手册。它想解决的不是“再做一个知识库”，而是让 AI 真正理解你的业务上下文，以及你为什么做出某个判断。
+
+这些“早”不是终点。我更在意的是，半年后它们是不是还在更新，能不能继续解决问题。
+
+## 我正在开源的项目
+
+### [amazon-skills](https://github.com/zach22-1999/amazon-skills)
+
+给 Amazon 卖家和跨境电商运营使用的 Agent Skills。现在包括亚马逊选品调研、功能需求验证、Listing 健康检查、广告搜索词分析、CVR 阈值诊断，以及创建新 Seller Skill 的工程流程。
+
+### [lingxing-mcp](https://github.com/zach22-1999/lingxing-mcp)
+
+面向领星 ERP 和 Amazon 运营场景的开源 MCP。它把 OpenAPI、IP 白名单、固定出口、团队共享与只读查询收口到一起，让 Claude Code、Codex、Cursor 等 AI Agent 能查到真实业务数据。
+
+### [seller-second-brain](https://github.com/zach22-1999/seller-second-brain)
+
+一份面向卖家的 GBrain 中文实操手册，也是我对 AI 业务记忆的阶段性答案：Skill 和 MCP 负责“怎么做”，GBrain 负责留下“为什么这样做”。
+
+### [generic-skills](https://github.com/zach22-1999/generic-skills)
+
+不只服务跨境电商的通用 Agent Skills，包含领导力教练、文档转换和内容发布工作流。
+
+## 你可以直接从一个问题开始
+
+- 想判断一个 Amazon 市场值不值得做：试试 [产品调研 Skill](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-product-research)。
+- 想知道一个微创新功能是不是卖家的真需求：试试 [功能需求验证 Skill](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-feature-demand-validator)。
+- 想检查 Listing 为什么看得懂却不想买：试试 [Listing 健康检查 Skill](https://github.com/zach22-1999/amazon-skills/tree/main/skills/zach-listing-health-checker)。
+- 想让 AI Agent 读取领星 ERP：从 [Lingxing MCP](https://github.com/zach22-1999/lingxing-mcp) 开始。
+- 想让 Agent 长期记住业务判断：读一遍 [卖家第二大脑](https://github.com/zach22-1999/seller-second-brain)。
+
+## 我比较相信的几件事
+
+我不太相信一段通用 prompt 能替你做好选品，也不太相信“能跑起来”就等于“能在业务里干活”。数据源、边界、失败路径和验收方式，往往比演示效果更重要。
+
+我也一直把判断边界留给人：人负责提出假设、决定方向和承担不可逆的选择；AI 负责穷举、验证和把事情做完。对我来说，这才是 AI Native，而不是把每个动作都自动化。
 
 ## English summary
 
-Zach is an Amazon seller and open-source builder working on **AI-native ecommerce operations**. His projects include installable **Amazon seller Agent Skills** for product research, listing audits and advertising analysis; an open-source **Lingxing ERP MCP server**; and a practical Chinese **GBrain guide** for building long-term business memory for AI agents.
+I am Zach, an Amazon seller building practical AI tools for cross-border ecommerce. My open-source work includes engineering-grade Amazon Seller Agent Skills for product research, listing audits and advertising analysis; a Lingxing ERP MCP server; and a Chinese GBrain field guide for long-term business memory. These projects come from real ecommerce operations, not generic prompt collections.
 
-## 联系与反馈
-
-- 公众号：**Zach的进化笔记**
-- 使用问题与改进建议：请在对应项目的 GitHub Issues 提交
-
-<sub>公开记录最后核验：2026-07-14。本主页会区分可证实事实、限定范围的检索结论与个人判断。</sub>
+For ongoing experiments and field notes, follow the WeChat official account **Zach的进化笔记** or add me on WeChat using the QR codes above.
